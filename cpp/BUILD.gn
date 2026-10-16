@@ -139,6 +139,7 @@ ohos_shared_library("phonenumber_standard") {
 }
 
 ohos_shared_library("geocoding") {
+  branch_protector_ret = "pac_ret"
   configs = [ ":phonenumber_config" ]
   sources = geocoding_source
   deps = [ ":phonenumber_standard" ]
